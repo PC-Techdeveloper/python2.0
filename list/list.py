@@ -191,5 +191,99 @@ any((val * 2) > 6 for val in vals1)
 print(vals1)
 
 """
-REVERSING LIST ELEMENTS
+CONCATENATE AND MERGE LIST
 """
+# The simplest way to concatenate
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+merged = list1 + list2
+
+# zip() returns a list of tuples
+alist = ["a1", "a2", "a3"]
+blist = ["b1", "b2", "b3"]
+
+for a, b in zip(alist, blist):
+    print(a, b)
+
+# if the lists have different lengths then the result will include only as
+# many elements as the shortest one:
+alist = ["a1", "a2", "a3"]
+blist = ["b1", "b2", "b3", "b4"]
+
+for a, b in zip(alist, blist):
+    print(a, b)
+
+alist = []
+len(list(zip(alist, blist)))
+
+"""
+For padding list of unequal length to the longest one with None use itertools.zip_longest => Import itertools
+"""
+alist = ["a1", "a2", "a3"]
+blist = ["b1"]
+clist = ["c1", "c2", "c3", "c4"]
+
+import itertools
+
+for a, b, c in itertools.zip_longest(alist, blist, clist):
+    print(a, b, c)
+
+# Insert to a specific index values
+alist = [123, "xyz", "zara", "abc"]
+alist.insert(2, [2009])
+print(f"Final list: {alist}")
+
+# Length of a list
+# use len() to get the one-dimensional length of a list
+
+print(len(["one", "two"]))
+print(len(["one", [2, 3], "four"]))
+
+# Remove duplicate values in list
+"""
+Removing duplicate values in a list can be done by converting the list to a set (that is an unordered collection of unique elements) and then converting it back to a list.
+"""
+names = ["aixk", "duke", "edik", "tofp", "duke"]
+print(set(names))
+
+## Accesing values in nested list
+alist = [[[1, 2], [3, 4]], [[5, 6, 7], [8, 9, 10], [12, 13, 14]]]
+print(alist[0][0][1])
+print(alist[1][1][2])
+
+## using nested for loops to print the list
+for row in alist:
+    for col in row:
+        print(col)
+# you can be used in a list comprehension
+print([col for row in alist for col in row])
+listc = alist[1].insert(2, 15)
+print(listc)
+
+"""
+another way to use nested for loops. The other way is better but i have need to use this occasion
+"""
+for row in range(len(alist)):
+    for col in range(len(alist[row])):
+        print(alist[row][col])
+
+## Using slices in nested list
+print(alist[1][1:])
+print(alist)
+
+## INITIALIZING A LIST TO A FIXED NUMBER OF ELEMENTS
+
+# For immutable elements (None, strings literals, etc)
+my_lsit = [None] * 10
+my_list = ["test"] * 10
+
+# For mutable elements (lists, dicts, sets, etc)
+my_list = [{1}] * 10
+print(my_list)
+my_list[0].add(2)
+print(my_list)
+
+# Instead, to initialize the list with a fixed number
+# of different mutables, use
+my_list = [{1} for _ in range(10)]
+print(my_list)
