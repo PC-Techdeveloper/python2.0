@@ -1,7 +1,7 @@
 {
   // ========== Visuals ==========
   "editor.cursorSmoothCaretAnimation": "on",
-  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontFamily": "cascadia code",
   "editor.guides.bracketPairs": "active",
   "editor.lineNumbers": "on",
   "editor.renderWhitespace": "none",
@@ -165,12 +165,12 @@
   "prettier.singleQuote": true,
   // ========== File Nesting ==========
   "explorer.fileNesting.enabled": true,
-  "editor.fontSize": 14,
+  "editor.fontSize": 15,
   "files.autoSave": "afterDelay",
   "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 45,
   "window.zoomLevel": 2,
-  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "terminal.integrated.fontFamily": "cascadia code",
   "editor.wordWrap": "bounded",
   "editor.fontLigatures": true,
   "editor.formatOnPaste": true,
@@ -193,8 +193,7 @@
   },
   "editor.cursorBlinking": "blink",
   "editor.smoothScrolling": true,
-  "editor.fastScrollSensitivity": 10,
-  "editor.cursorStyle": "block",
+  "editor.cursorStyle": "line",
   "editor.find.cursorMoveOnType": false,
   "emmet.syntaxProfiles": {
     "html": {
@@ -206,8 +205,8 @@
   "editor.guides.indentation": false,
   "workbench.preferredHighContrastLightColorTheme": "One Dark Pro Darker",
   "workbench.preferredHighContrastColorTheme": "One Dark Pro Darker",
-  "workbench.activityBar.location": "default",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.activityBar.location": "bottom",
+  "workbench.iconTheme": "symbols",
   "workbench.tree.renderIndentGuides": "none",
   "breadcrumbs.enabled": true,
   "breadcrumbs.icons": true,
@@ -229,25 +228,25 @@
   "workbench.tips.enabled": false,
   "window.commandCenter": true,
   //APC CUSTOMIZE UI
-  "editor.codeLens": false,
+  "editor.codeLens": true,
   "zenMode.centerLayout": false,
   "zenMode.hideActivityBar": false,
   "zenMode.hideLineNumbers": false,
   "zenMode.hideStatusBar": false,
-  "zenMode.fullScreen": true,
+  "zenMode.fullScreen": false,
   "explorer.compactFolders": false,
   "explorer.openEditors.visible": 1,
   "explorer.sortOrder": "type",
-  "workbench.statusBar.visible": true,
+  "workbench.statusBar.visible": false,
   "terminal.integrated.gpuAcceleration": "on",
   "editor.autoIndent": "full",
   "editor.folding": true,
-  "editor.suggestOnTriggerCharacters": true,
+  "editor.suggestOnTriggerCharacters": false,
   "editor.quickSuggestions": {
     "other": true,
   },
   "editor.parameterHints.enabled": false,
-  "editor.glyphMargin": false,
+  "editor.glyphMargin": true,
   "editor.showFoldingControls": "mouseover",
   "editor.matchBrackets": "never",
   "template-string-converter.enabled": true,
@@ -276,9 +275,9 @@
   "errorLens.enabled": true,
   "github.copilot.selectedCompletionModel": "gpt-4o-copilot",
   "supermaven.enable": {
-    "*": false
+    "*": true
   },
   "oneDarkPro.vivid": true,
   "oneDarkPro.italic": true,
-  "oneDarkPro.bold": true
+  "oneDarkPro.bold": true,
 }
