@@ -308,3 +308,5 @@ for item in shopping3:
 
 for i, item in enumerate(shopping3):
     print(f"Indice {i}: {item}")
+
+## Iterar sobre multiples listas
