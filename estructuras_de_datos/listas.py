@@ -219,5 +219,92 @@ print("Agua" in shopping)  # True ✅
 print("Pollo" in shopping)  # False ✖️
 
 """
-Número de ocurrencias: 🟡
+Número de ocurrencias: Para contar cuantas veces aparece un determinado valor dentro de una lista podemos usar la función count():
 """
+
+sheldon_greeting = ["Penny", "Penny", "Penny"]
+
+print(sheldon_greeting.count("Penny"))
+
+print(sheldon_greeting.count("Howard"))
+
+"""
+Sividir una cadena de texto en lista: Dividirla por un separador con la función split(), devuelve una lista donde cada elemento es una parte de la cadena del texto original.
+"""
+
+proverb = "No hay mal que por bien no venga"
+
+proverb_list = proverb.split()
+
+print(proverb_list)
+
+tools = "Martillo,Sierra,Destornillador"
+
+tools_list = tools.split(",")
+
+print(tools_list)
+
+game = "piedra-papel-tijera"
+
+print(type(game_tools := game.split("-")))
+
+print(game_tools)
+
+"""
+Particionado de cadenas de texto: Python ofrece la función partition(), el resultado es una tupla; para dividir una cadena de texto en dos partes, una con un determinado carácter y otra con el resto de la cadena.
+"""
+
+text = "3 + 4"
+
+print(text.partition("+"))
+
+"""
+Unir una lista en cadena de texto: Añade un separador entre cada elemento de la lista y devuelve una cadena de texto.
+"""
+
+shopping = ["Agua", "Huevos", "Aceite"]
+
+shopping_string = "--".join(shopping)
+
+print(shopping_string)
+
+"""
+Ordenar una lista: 
+"""
+
+## Conservando la lista original
+
+languages = ["Python", "Ruby", "JavaScript", "Java", "C++"]
+
+## sorted(): Devuelve una nueva lista ordenada
+print(sorted(languages))
+
+## Modificando la lista original
+
+## sort():
+
+languages = ["Python", "Ruby", "JavaScript", "Java", "C++"]
+
+languages.sort()
+
+print(languages)
+
+## reverse, para indicar el orden inverso de la lista
+
+languages = ["Python", "Ruby", "JavaScript", "Java", "C++"]
+
+print(sorted(languages, reverse=True))
+
+"""
+ITERAR SOBRE UNA LISTA: Podemos iterar sobre elementos de una lista usando la sentencia for:
+"""
+
+shopping3 = ["Agua", "Huevos", "Aceite", "Sal", "Limon"]
+
+for item in shopping3:
+    print(item)
+
+## Iterar usando enumeración para saber el indice del elemento
+
+for i, item in enumerate(shopping3):
+    print(f"Indice {i}: {item}")
