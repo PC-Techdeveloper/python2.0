@@ -112,5 +112,163 @@ print("almohada" in rae)
 print("montuvio" in rae)
 
 """
-Longitud de un diccionario: 🟡
+Longitud de un diccionario: 
 """
+print(len(rae))
+
+"""
+Obtener todos los elementos:
+"""
+
+# Todas las claves de un diccionario
+print(rae.keys())
+
+# Todos los valores de un diccionario
+print(rae.values())
+
+# Todos los pares clave-valor de un diccionario
+print(rae.items())
+
+"""
+Iterar sobre un diccionario:
+"""
+
+# Iterar sobre las claves
+for word in rae.keys():
+    print(word)
+
+# Iterar sobre los valores
+for meaning in rae.values():
+    print(meaning)
+
+# Iterar sobre los pares clave-valor
+for word, meaning in rae.items():
+    print(word, meaning)
+
+"""
+Borrar elementos:
+"""
+
+# Mediante su clave: del
+del rae["bifronte"]
+
+print(rae)
+
+# Por su clave (con extracción)
+rae.pop("anarcoide")
+
+print(rae)
+# print(rae["bucle"])  # ✖️ error: no existe
+
+# Borrado completo del diccionario
+rae.clear()
+
+print(rae)  # Borra el contenido de la variable
+
+# Reinicialzando el diccionario a vacío con {}
+# Creando una nueva variable vacía
+rae = {}
+print(rae)
+
+"""
+Combinar diccionarios:
+
+Si la clave no existe, se añade con su valor.
+Si la clave ya existe, se añade con el valor del último diccionario en la mezcla.
+"""
+
+rae1 = {
+    "bifronte": "De dos frentes o dos caras",
+    "enjuiciar": "Someter una cuestión a examen, discusión y juicio",
+}
+
+rae2 = {
+    "anarcoide": "Que tiende al desorden",
+    "montuvio": "Campesino de la costa",
+    "enjuiciar": "Instruir, juzgar o sentenciar una causa",
+}
+
+# Sin modificar los diccionarios originales
+# Mediante el operadoar **
+
+print({**rae1, **rae2})
+
+# Mediante el operador |
+
+print(rae1 | rae2)
+
+# Modificando los diccionarios originales
+# Mediante la función update()
+
+rae1.update(rae2)
+
+print(rae1)
+
+"""
+Copias de diccionarios:
+"""
+
+# Mediante la función copy()
+original_rae = {
+    "name": "guido",
+    "surname": "van rossum",
+    "job": "python creator",
+}
+
+copy_rae = original_rae.copy()
+
+original_rae["name"] = "Jefferson"
+
+print(original_rae)
+
+print(copy_rae)
+
+## En caso de que se este trabajando con elementos mutables, se hace uso
+## de la función deepcopy() dentro del módulo copy de la librería estándar
+
+import copy
+
+original_dict = {
+    "name": "Juan",
+    "age": 30,
+    "hobbies": ["read", "write", "code"],
+    "address": {"city": "Madrid", "country": "Spain"},
+}
+
+copy_shallow = copy.copy(original_dict)
+
+copy_deep = copy.deepcopy(original_dict)
+
+original_dict["hobbies"].append("sport")
+original_dict["address"]["city"] = "Barcelona"
+
+original_dict["address"]["country"] = "France"
+
+print(f"address: {original_dict}")
+print(f"copy_shallow: {copy_shallow}")
+print(f"copy_deep: {copy_deep}")
+
+"""
+Diccionarios por comprensión:
+Podemos aplicar este método usando llaves ({ })
+"""
+
+words = ("sun", "space", "rocket", "earth")
+words_length = {word: len(word) for word in words}
+print(words_length)
+
+# Aplicar condiciones a estas comprensiones
+words = ("sun", "space", "rocket", "earth")
+words_length = {w: len(w) for w in words if w[0] not in "aeiou"}
+print(words_length)
+
+"""
+Objetos hashables: Un objeto, es hashable si se le pueede asignar un valor hash que no cambia en ejecución durante toda su vida. Para encontrar el has de un objto se puede utilizar la función hash(), que devuelve un número entero y es utilizado para indexar la tabla hash que se mantiene internamente en la memoria de la computadora.
+"""
+
+print(hash(999))
+print(hash(3.14))
+print(hash("hello"))
+print(hash(("a,", "b", "c")))
+# Para que un objeto sea hashable, debe ser inmutable
+print(hash([1, 2, 3]))
