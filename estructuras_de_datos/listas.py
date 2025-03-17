@@ -310,3 +310,149 @@ for i, item in enumerate(shopping3):
     print(f"Indice {i}: {item}")
 
 ## Iterar sobre multiples listas
+"""
+Python ofrece la posibilidad de iterar sobre multiples listas en paralelo utilizando la función zip(). Se basa en ir juntando ambas listas elemento a elemento
+"""
+
+shopping = ["Agua", "Aceite", "Arroz"]
+
+details = ["mineral natural", "fresco", "salado"]
+
+for product, detail in zip(shopping, details):
+    print(product, detail)
+
+## Obtener una lista explicita con la combinación en paralelo de las listas
+shoes = ["Nike", "Reebok", "Asics"]
+
+details_shoes = ["rojo", "azul", "amarillo"]
+
+print(list(zip(shoes, details_shoes)))
+
+"""
+Comparar listas:
+"""
+
+print([1, 2, 3] < [1, 2, 4])
+
+"""
+CUIDADO CON LAS COPIAS: Las listas son estructuras de datos mutables y esta caracteristica obliga a tener cuidado cuando realizamos copias, ya que la modificación de una de ellas puede afectar a la otra.
+"""
+
+original_list = [4, 3, 7, 1]
+
+## Copy(): No modifica la lista original
+copy_list = original_list.copy()
+
+original_list[0] = 15
+
+print(original_list)
+
+print(copy_list)
+
+copy_list = original_list[:]
+
+print(id(original_list) != id(copy_list))
+
+"""
+Veracidad multiple: para comprobar la veracidad de determinadas expresiones, Python nos ofrece dos funciones «built-in» con las que podemos evaluar si se cumplen todas las condiciones all() o si se cumple alguna condición any(). Estas funciones trabajan sobre iterables, y el caso más evidente es una lista.
+"""
+
+word = "python"
+
+enough_length = len(word) > 4
+right_beginning = word.startswith("p")
+min_ys = word.count("y") >= 1
+## Versión con veracidad múltiple usando all()
+is_cool_word = all([enough_length, right_beginning, min_ys])
+
+if is_cool_word:
+    print("¡Is a good word ✅!")
+else:
+    print("¡No thanks ✖️!")
+
+word = "yeah"
+
+enough_length = len(word) > 4
+right_beginning = word.startswith("p")
+min_ys = word.count("y") >= 1
+
+## Versión con veracidad múltiple usando any()
+is_fine_word = any([enough_length, right_beginning, min_ys])
+
+if is_fine_word:
+    print("¡Is a Fine word ✅!")
+else:
+    print("¡No thanks ✖️!")
+
+## Tener en cuenta la peculiaridad cuando se trabajan con listas vacias
+print(all([]))
+
+print(any([]))
+
+"""
+Listas por comprensión: Establecen una técnica para crear listas de forma más compacta basándose en el concepto matemático de conjuntos definidos por compresión.
+"""
+values = "32,45,11,87,20,48"
+int_values = [int(value) for value in values.split(",")]
+print(int_values)
+
+## Condiciones en comprensiones
+values = "32,45,11,87,20,48"
+int_values = [int(v) for v in values.split(",") if v.startswith("4")]
+print(int_values)
+
+"""
+sys.argv: Ejecutar programa desde la línea de comandos, acceder a los argumentos de dicho programa. Para ello se utiliza una lista especial que se encuentra dentro del  módulo sys y se denomina argv.
+"""
+
+"""
+Funciones matemáticas:
+"""
+
+## Suma de todos los valores
+data = [5, 3, 2, 8, 9, 1]
+print(sum(data))
+
+## Mínimo de todos los valores
+data = [5, 3, 2, 8, 9, 1]
+print(min(data))
+
+## Máximo de todos los valores
+data = [5, 3, 2, 8, 9, 1]
+print(max(data))
+
+"""
+Listas de listas
+"""
+goalkeeper = "cata"
+defenders = ["olga", "laia", "trene", "ona"]
+midfielders = ["jenni", "teresa", "aitana"]
+forwards = ["mariona", "salma", "alba"]
+
+team = [goalkeeper, defenders, midfielders, forwards]
+print(team)
+
+# Comprobar el acceso a distintos elementos
+print(team[0])
+print(team[2])
+print(team[3][1])
+
+# Recorrer la lista
+for playline in team:
+    if isinstance(playline, list):
+        for player in playline:
+            print(player, end=" ")
+        print()
+    else:
+        print(playline)
+
+from collections import deque
+
+deque()
+
+print(deque(["a", "b", "c", "d"]))
+
+llist = deque("abcdefghij")
+llist.appendleft("z")
+print(llist.popleft())
+print(llist)
