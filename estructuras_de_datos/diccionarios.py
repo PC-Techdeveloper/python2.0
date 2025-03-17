@@ -59,3 +59,58 @@ print(my_dictionary)
 Operaciones con diccionarios:
 
 """
+
+# Obtener un elemento
+print(rae["anarcoide"])
+# print(rae["access"]) # ✖️ error: no existe
+
+"""
+Usando get(): 
+Si la clave que buscamos EXISTE, devuelve su valor.
+Si la que buscamos NO EXISTE, devuelve None (Salvo que se le indique otro valor por defecto, pero en ninguno de los dos casos obtendrá un error).
+"""
+
+print(rae.get("bifronte"))
+print(rae.get("programacion", "No disponible"))
+
+"""
+Añadir o modificar elementos:
+Para añadir elementos a un diccionario sólo es necesario hacer referencia a la CLAVE y asignarle un VALOR:
+
+Si la clave YA EXISTE, se reemplaza el valor existente por el nuevo valor.
+Si la clave NO EXISTE, se añade la clave y el valor.
+"""
+
+# Añadir un nuevo elemento
+rae["enjuiciar"] = "Someter una cuestión a examen, discusión y juicio"
+
+print(rae)
+
+# Modificar un elemento existente
+rae["enjuiciar"] = "Instruir, juzgar o sentenciar una causa"
+
+print(rae)
+
+"""
+Crear diccionario desde vacío:
+"""
+
+VOWELS = "aeiou"
+
+enum_vowels = {}
+
+for i, vowel in enumerate(VOWELS, start=1):
+    enum_vowels[vowel] = i
+
+print(enum_vowels)
+
+"""
+Pertenencia de una clave:
+"""
+print("bifronte" in rae)
+print("almohada" in rae)
+print("montuvio" in rae)
+
+"""
+Longitud de un diccionario: 🟡
+"""
