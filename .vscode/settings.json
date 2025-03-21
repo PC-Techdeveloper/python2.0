@@ -278,4 +278,8 @@
   "oneDarkPro.italic": true,
   "oneDarkPro.bold": true,
   "security.workspace.trust.untrustedFiles": "open",
+  "python.REPL.enableREPLSmartSend": false,
+  "python.analysis.extraPaths": [
+    "./modularidad/extramath"
+  ],
 }
