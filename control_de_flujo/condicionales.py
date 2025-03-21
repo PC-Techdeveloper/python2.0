@@ -48,3 +48,45 @@ print(fire_risk)
 # Abreviación de la sentencia IF-ELSE
 fire_risk = "LOW" if temp < 30 else "HIGH"
 print(f"El riesgo de incendios es {fire_risk}")
+
+"""
+Operadores de comparación:
+Igualdad
+
+==
+Desigualdad: !=
+
+Menor que: <
+
+Menor o igual que: <=
+
+Mayor que :>
+
+Mayor o igual que: >=
+"""
+
+print("---- Operadores de Comparación ----")
+value = 8
+print(value == 8)
+print(value != 8)
+print(value < 12)
+print(value <= 7)
+print(value > 4)
+print(value >= 9)
+
+# Python ofrece la posibilidad de ver si un valor está entre dos límites
+# de manera directa:
+
+x = 8
+
+print(4 <= x <= 12)
+
+"""
+Operadores lógicos:
+and , or , not
+"""
+
+print("---- Operadores Lógicos ----")
+x = 8
+
+print(x > 4 or x > 12)
