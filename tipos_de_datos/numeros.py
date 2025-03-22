@@ -232,4 +232,20 @@ print(bin(12))
 
 print("--- Base Octal ---")
 
-# Prefijo: 0o
+# Prefijo: 0o: Cuenta 8 símbolos: 0, 1, 2, 3, 4, 5, 6, 7
+print(0o6243)
+print(0o1257)
+
+# Función: oct() - Devuelve un string con los números octales.
+print(oct(3225))
+print(oct(687))
+
+print("--- Base Hexadecimal ---")
+
+# Prefijo: 0x: Cuenta con 16 símbolos: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f
+print(0x7F2A)
+print(0x48FF)
+
+# Función: hex() - Devuelve un string con los números hexadecimales.
+print(hex(32554))
+print(hex(18687))
