@@ -318,5 +318,64 @@ print(f"{name!r}")
 print(f"{is_married!r}")
 
 """
-Caracteres unicode:
+Caracteres unicode: Los programas de ordenador deben manejar una amplia variedad de caracteres. Python utiliza el estándar Unicode para representar caracteres. Eso significa que tenemos acceso a una amplia carta de caracteres que nos ofrece el estándar de codificación Unicode.
+
+Unicode asigna a cada carácter dos atributos:
+
+1. Un código númerico (hexadecimal)
+2. Un nombre representativo.
 """
+
+# chr() permite representar un carácter a partir de su código
+rocket_code = 0x1F680
+rocket = chr(rocket_code)
+print(rocket)
+
+# ord() permite obtener el código decimal de un carácter a partir de
+# su representación
+rocket_code = hex(ord(rocket))
+print(rocket_code)
+
+# El modificador \N permite representar un carácter a partir de su nombre
+print("\N{ROCKET}")
+
+"""
+ASCII: 
+Son los caracteres del 0 al 127
+"""
+
+print(chr(48))
+print(chr(57))
+print(chr(65))
+print(chr(90))
+
+"""
+Comparar cadenas: 
+Cuando comparamos dos cadenas de texto lo hacemos en términos lexicográficos. Es decir, se van comparando los caracteres de ambas cadenas uno a uno y se va mirando cuál está antes.
+"""
+
+print("arca" < "arpa")  # 'ar' es igual para ambas cadenas
+
+print(ord("c"))
+print(ord("p"))
+print("a" < "antes")
+print("antes" < "después")
+print("después" < "ahora")
+print("ahora " < "a")
+
+# En Python las letras mayúsculas van antes que las minúsculas
+print("A" < "a")
+print(ord("A"))
+print(ord("a"))
+
+"""
+Casos de uso: 
+Python proporciona una función llamada dir() para inspeccionar un determinado tipo de objeto.
+"""
+
+text = "This is it!"
+number_float = 3.14
+print("--- dir(number_float) ---")
+print(dir(number_float))
+print("--- dir(text) ---")
+print(dir(text))
