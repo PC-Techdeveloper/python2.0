@@ -1,17 +1,17 @@
 {
   // ========== Visuals ==========
   "editor.cursorSmoothCaretAnimation": "on",
-  "editor.fontFamily": "Hack FC Ligatured",
+  "editor.fontFamily": "Cascadia code",
   "editor.guides.bracketPairs": "active",
   "editor.lineNumbers": "on",
   "editor.renderWhitespace": "none",
   "window.autoDetectColorScheme": false,
-  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.colorTheme": "Tokyo Night",
   "workbench.editor.tabActionLocation": "left",
   "workbench.fontAliasing": "antialiased",
   "workbench.list.smoothScrolling": true,
-  "workbench.preferredDarkColorTheme": "One Dark Pro Darker",
-  "workbench.preferredLightColorTheme": "One Dark Pro Darker",
+  "workbench.preferredDarkColorTheme": "Tokyo Night",
+  "workbench.preferredLightColorTheme": "Tokyo Night",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
@@ -50,7 +50,7 @@
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "block",
   "terminal.integrated.persistentSessionReviveProcess": "never",
-  "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.tabs.enabled": false,
   "terminal.integrated.fontSize": 15,
   "workbench.editor.closeOnFileDelete": true,
   "workbench.editor.highlightModifiedTabs": true,
@@ -163,9 +163,10 @@
   "prettier.printWidth": 200,
   "prettier.semi": true,
   "prettier.singleQuote": true,
+  "prettier.arrowParens": "avoid",
   // ========== File Nesting ==========
   "explorer.fileNesting.enabled": true,
-  "editor.fontSize": 13.5,
+  "editor.fontSize": 14,
   "files.autoSave": "afterDelay",
   "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 45,
@@ -203,8 +204,8 @@
   "liveServer.settings.donotShowInfoMsg": true,
   "editor.snippetSuggestions": "top",
   "editor.guides.indentation": true,
-  "workbench.preferredHighContrastLightColorTheme": "One Dark Pro Darker",
-  "workbench.preferredHighContrastColorTheme": "One Dark Pro Darker",
+  "workbench.preferredHighContrastLightColorTheme": "Tokyo Night",
+  "workbench.preferredHighContrastColorTheme": "Tokyo Night",
   "workbench.activityBar.location": "default",
   "workbench.iconTheme": "symbols",
   "workbench.tree.renderIndentGuides": "none",
@@ -246,7 +247,7 @@
     "other": true,
   },
   "editor.parameterHints.enabled": false,
-  "editor.glyphMargin": true,
+  "editor.glyphMargin": false,
   "editor.showFoldingControls": "mouseover",
   "editor.matchBrackets": "never",
   "template-string-converter.enabled": true,
@@ -278,8 +279,10 @@
   "oneDarkPro.italic": true,
   "oneDarkPro.bold": true,
   "security.workspace.trust.untrustedFiles": "open",
-  "python.REPL.enableREPLSmartSend": false,
-  "python.analysis.extraPaths": [
-    "./modularidad/extramath"
-  ],
+  "supermaven.enable": {
+    "*": true
+  },
+  "telemetry.enabledTelemetry": false,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.telemetryLevel": "off"
 }
