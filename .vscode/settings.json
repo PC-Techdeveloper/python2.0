@@ -166,7 +166,7 @@
   "prettier.arrowParens": "avoid",
   // ========== File Nesting ==========
   "explorer.fileNesting.enabled": true,
-  "editor.fontSize": 14,
+  "editor.fontSize": 13,
   "files.autoSave": "afterDelay",
   "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 45,
@@ -245,6 +245,8 @@
   "editor.suggestOnTriggerCharacters": true,
   "editor.quickSuggestions": {
     "other": true,
+    "comments": false,
+    "strings": false
   },
   "editor.parameterHints.enabled": false,
   "editor.glyphMargin": false,
@@ -284,7 +286,7 @@
   "telemetry.enabledTelemetry": false,
   "telemetry.enableCrashReporter": false,
   "telemetry.telemetryLevel": "off",
-  "editor.quickSuggestionsDelay": 500,
+  "editor.quickSuggestionsDelay": 5,
   "editor.trimAutoWhitespace": false,
   "explorer.autoReveal": false,
   "editor.suggest.preview": false,
