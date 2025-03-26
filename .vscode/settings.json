@@ -166,7 +166,7 @@
   "prettier.arrowParens": "avoid",
   // ========== File Nesting ==========
   "explorer.fileNesting.enabled": true,
-  "editor.fontSize": 13,
+  "editor.fontSize": 13.3,
   "files.autoSave": "afterDelay",
   "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 45,
@@ -206,10 +206,10 @@
   "editor.guides.indentation": true,
   "workbench.preferredHighContrastLightColorTheme": "One Dark Pro Darker",
   "workbench.preferredHighContrastColorTheme": "One Dark Pro Darker",
-  "workbench.activityBar.location": "default",
+  "workbench.activityBar.location": "top",
   "workbench.iconTheme": "symbols",
   "workbench.tree.renderIndentGuides": "none",
-  "breadcrumbs.enabled": true,
+  "breadcrumbs.enabled": false,
   "breadcrumbs.icons": true,
   "breadcrumbs.showArrays": false,
   "breadcrumbs.showBooleans": false,
@@ -290,5 +290,5 @@
   "editor.trimAutoWhitespace": false,
   "explorer.autoReveal": false,
   "editor.suggest.preview": false,
-  "editor.lineHeight": 23
+  "editor.lineHeight": 21
 }
