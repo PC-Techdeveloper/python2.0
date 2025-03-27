@@ -192,7 +192,7 @@
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.defaultFormatter": "redhat.java"
   },
-  "editor.cursorBlinking": "expand",
+  "editor.cursorBlinking": "solid",
   "editor.smoothScrolling": true,
   "editor.cursorStyle": "line",
   "editor.find.cursorMoveOnType": false,
@@ -217,7 +217,7 @@
   "breadcrumbs.showConstants": false,
   "breadcrumbs.showConstructors": false,
   "workbench.editor.empty.hint": "hidden",
-  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreview": true,
   "workbench.editor.labelFormat": "short",
   "window.density.editorTabHeight": "default",
   "editor.formatOnType": true,
@@ -235,6 +235,7 @@
   "zenMode.hideLineNumbers": false,
   "zenMode.hideStatusBar": false,
   "zenMode.fullScreen": true,
+  "zenMode.showTabs": "single",
   "explorer.compactFolders": false,
   "explorer.openEditors.visible": 1,
   "explorer.sortOrder": "type",
@@ -301,4 +302,8 @@
     "**/dist/**": true,
     "**/build/**": true
   },
+  "files.enableTrash": false,
+  "editor.largeFileOptimizations": true,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "window.customTitleBarVisibility": "windowed"
 }
