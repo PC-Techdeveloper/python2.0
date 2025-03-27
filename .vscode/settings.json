@@ -270,7 +270,7 @@
   "editor.detectIndentation": false,
   "workbench.editor.showTabs": "single",
   "editor.colorDecorators": false,
-  "editor.renderLineHighlight": "line",
+  "editor.renderLineHighlight": "none",
   "chat.editor.wordWrap": "on",
   "editor.accessibilitySupport": "off",
   "terminal.integrated.smoothScrolling": true,
@@ -292,7 +292,7 @@
   "editor.trimAutoWhitespace": false,
   "explorer.autoReveal": false,
   "editor.suggest.preview": false,
-  "editor.lineHeight": 21,
+  "editor.lineHeight": 19,
   "files.watcherExclude": {
     "**/.git/objects/**": true,
     "**/.git/subtree-cache/**": true,
