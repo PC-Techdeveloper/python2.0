@@ -1,7 +1,7 @@
 {
   // ========== Visuals ==========
   "editor.cursorSmoothCaretAnimation": "on",
-  "editor.fontFamily": "CaskaydiaCove Nerd Font Mono",
+  "editor.fontFamily": "Cascadia Code",
   "editor.guides.bracketPairs": "active",
   "editor.lineNumbers": "on",
   "editor.renderWhitespace": "none",
@@ -33,7 +33,7 @@
   "editor.hover.sticky": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": "never",
-    "source.fixAll.eslint": "explicit",
+    "source.fixAll.eslint": "never",
     "source.organizeImports": "never"
   },
   "explorer.confirmDelete": false,
@@ -166,7 +166,7 @@
   "prettier.arrowParens": "avoid",
   // ========== File Nesting ==========
   "explorer.fileNesting.enabled": true,
-  "editor.fontSize": 13.3,
+  "editor.fontSize": 14,
   "files.autoSave": "afterDelay",
   "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 45,
@@ -183,7 +183,7 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.formatOnType": true,
     "editor.wordBasedSuggestions": "off",
-    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.defaultFormatter": "ms-python.autopep8",
   },
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
@@ -192,7 +192,7 @@
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.defaultFormatter": "redhat.java"
   },
-  "editor.cursorBlinking": "solid",
+  "editor.cursorBlinking": "smooth",
   "editor.smoothScrolling": true,
   "editor.cursorStyle": "line",
   "editor.find.cursorMoveOnType": false,
@@ -202,7 +202,7 @@
     }
   },
   "liveServer.settings.donotShowInfoMsg": true,
-  "editor.snippetSuggestions": "top",
+  "editor.snippetSuggestions": "inline",
   "editor.guides.indentation": true,
   "workbench.preferredHighContrastLightColorTheme": "One Dark Pro Darker",
   "workbench.preferredHighContrastColorTheme": "One Dark Pro Darker",
@@ -250,7 +250,7 @@
     "strings": false
   },
   "editor.parameterHints.enabled": false,
-  "editor.glyphMargin": false,
+  "editor.glyphMargin": true,
   "editor.showFoldingControls": "mouseover",
   "editor.matchBrackets": "never",
   "template-string-converter.enabled": true,
@@ -266,12 +266,12 @@
   "chat.commandCenter.enabled": false,
   "editor.scrollbar.vertical": "auto",
   "editor.scrollbar.horizontal": "hidden",
-  "editor.linkedEditing": true,
+  "editor.linkedEditing": false,
   "editor.suggest.insertMode": "replace",
   "editor.detectIndentation": false,
   "workbench.editor.showTabs": "single",
   "editor.colorDecorators": false,
-  "editor.renderLineHighlight": "none",
+  "editor.renderLineHighlight": "all",
   "chat.editor.wordWrap": "on",
   "editor.accessibilitySupport": "off",
   "terminal.integrated.smoothScrolling": true,
@@ -283,17 +283,16 @@
   "security.workspace.trust.untrustedFiles": "open",
   "supermaven.enable": {
     "*": true,
-    "supermaven.inlineCompletion.enabled": false,
-    "supermaven.inlineCompletion.delayMs": 1,
+    "supermaven.inlineCompletion.enabled": true,
+    "supermaven.inlineCompletion.delayMs": 400,
   },
   "telemetry.enabledTelemetry": false,
   "telemetry.enableCrashReporter": false,
   "telemetry.telemetryLevel": "off",
-  "editor.quickSuggestionsDelay": 1,
+  "editor.quickSuggestionsDelay": 400,
   "editor.trimAutoWhitespace": false,
   "explorer.autoReveal": false,
   "editor.suggest.preview": false,
-  "editor.lineHeight": 19,
   "files.watcherExclude": {
     "**/.git/objects/**": true,
     "**/.git/subtree-cache/**": true,
@@ -303,7 +302,12 @@
     "**/build/**": true
   },
   "files.enableTrash": false,
-  "editor.largeFileOptimizations": true,
+  "editor.largeFileOptimizations": false,
   "editor.unicodeHighlight.ambiguousCharacters": false,
-  "window.customTitleBarVisibility": "windowed"
+  "window.customTitleBarVisibility": "windowed",
+  "editor.wordBasedSuggestions": "off",
+  "editor.semanticHighlighting.enabled": true,
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.autoSurround": "never",
+  "editor.lineHeight": 23,
 }
