@@ -69,6 +69,7 @@ Longitud de un conjunto:
 
 print(f"Longitud:", len(beatles))
 
+
 """
 Iterar sobre un conjunto:
 """
