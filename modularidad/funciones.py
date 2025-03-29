@@ -1,4 +1,7 @@
 # Definiendo una función
+from functools import reduce
+
+
 def say_hello():
     print("Hello 👌")
 
@@ -113,7 +116,7 @@ Los argumentos no son copiados en un orden específico sino que se asignan por n
 print(build_cpu(vendor="AMD", num_cores=8, freq=2.7))
 print(build_cpu(freq=2.7, vendor="AMD", num_cores=8))
 
-## Se puede mezclar, los posicionales van antes que los nominales
+# Se puede mezclar, los posicionales van antes que los nominales
 print(build_cpu("INTEL", num_cores=4, freq=3.1))
 
 """
@@ -404,19 +407,23 @@ TIPOS DE FUNCIONES:
 Funciones lambda: Las funciones lambda son funciones anónimas que se definen en una sola línea. Se utilizan para crear funciones pequeñas y simples de forma rápida y concisa.
 """
 
-num_words = lambda t: len(t.split())
+
+def num_words(t): return len(t.split())
+
 
 print(type(num_words))
 print(num_words)
 print(num_words("Hi my friend, how are you? 🖐️"))
 
-logic_and = lambda x, y: x & y
+
+def logic_and(x, y): return x & y
+
 
 for i in range(2):
     for j in range(2):
         print(f"{i} & {j} = {logic_and(i, j)}")
 
-## Lambdas como argumentos
+# Lambdas como argumentos
 
 geoloc = (
     (15.623037, 13.258358),
@@ -482,8 +489,6 @@ print([x for x in data if x % 2 == 1])
 reduce(): Permite reducir una función sobre un conjunto de valores. 
 Para poder usar la función reduce es necesario importar el módulo functools
 """
-
-from functools import reduce
 
 
 def mult_values(a, b):
@@ -595,7 +600,7 @@ Decoradores:
 Un decorador es una función que recibe como parámetro una función y devuelve otra función.
 """
 
-## Esqueleto básico de un decorador
+# Esqueleto básico de un decorador
 
 
 def my_decorator(func):  # Nombre del decorador
@@ -782,7 +787,7 @@ catalonia()
 
 print(language)
 
-## Contenido de los espacios de nombres
+# Contenido de los espacios de nombres
 language = "english"
 
 
