@@ -188,7 +188,7 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.formatOnType": true,
     "editor.wordBasedSuggestions": "off",
-    "editor.defaultFormatter": "ms-python.autopep8",
+    "editor.defaultFormatter": "charliermarsh.ruff",
   },
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
@@ -338,5 +338,4 @@
   "editor.suggest.showIcons": true,
   "editor.suggest.showSnippets": true,
   "debug.showInStatusBar": "never",
-  "editor.lineHeight": 20
 }
