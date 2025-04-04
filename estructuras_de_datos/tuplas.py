@@ -29,7 +29,7 @@ three_wise_men = ("melchor", "gaspar", "baltasar")
 
 # Conversión
 
-## Función tuple()
+# Función tuple()
 
 """Esta conversión es válida para aquellos tipos que sean iterables: str, list, dist, set, etc. """
 shopping = ["agua", "aceite", "arroz"]
