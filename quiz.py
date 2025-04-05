@@ -9,3 +9,9 @@ set2 = {80, 50, 20}
 
 # Intersección
 print(set1 & set2)
+
+list = ['Python', 'Developers']
+
+result = [i for i in list if len(i) > 6]
+
+print(result)
