@@ -199,7 +199,7 @@
   },
   "editor.cursorBlinking": "smooth",
   "editor.smoothScrolling": true,
-  "editor.cursorStyle": "line",
+  "editor.cursorStyle": "block",
   "editor.find.cursorMoveOnType": false,
   "emmet.syntaxProfiles": {
     "html": {
@@ -252,7 +252,7 @@
   "editor.quickSuggestions": {
     "other": true,
     "comments": false,
-    "strings": false
+    "strings": false,
   },
   "editor.parameterHints.enabled": false,
   "editor.glyphMargin": true,
@@ -276,7 +276,7 @@
   "editor.detectIndentation": false,
   "workbench.editor.showTabs": "multiple",
   "editor.colorDecorators": false,
-  "editor.renderLineHighlight": "line",
+  "editor.renderLineHighlight": "none",
   "chat.editor.wordWrap": "on",
   "editor.accessibilitySupport": "off",
   "terminal.integrated.smoothScrolling": true,
