@@ -18,7 +18,7 @@ print(result)
 
 
 def addToList(listContainer):
-    listContainer += [10]
+    listContainer += [10]  # Add to the end of the list
 
 
 myListContainer = [10, 20, 30, 40]
