@@ -15,3 +15,16 @@ list = ['Python', 'Developers']
 result = [i for i in list if len(i) > 6]
 
 print(result)
+
+
+def addToList(listContainer):
+    listContainer += [10]
+
+
+myListContainer = [10, 20, 30, 40]
+
+addToList(myListContainer)
+
+print(myListContainer)
+
+print(len(myListContainer))
