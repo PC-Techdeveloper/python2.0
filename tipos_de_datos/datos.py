@@ -74,4 +74,3 @@ Tipos de objetos según su naturaleza de cambio:
 inmutable: bool, int, float, str, tuple.
 mutable: list, set, dict.
 """
-
