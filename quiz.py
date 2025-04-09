@@ -28,3 +28,14 @@ addToList(myListContainer)
 print(myListContainer)
 
 print(len(myListContainer))
+
+# Part 2
+
+s1 = {1, 2, 3, 4, 5}
+s2 = {3, 4, 5, 6, 7}
+
+result = s1.intersection(s2)
+result2 = s1 & s2
+
+print(result)
+print(result2)
