@@ -40,8 +40,10 @@ print(coche_de_pheralb.brand)
 
 # Crear una clase para llamar a la AI de OpenAI, DeepSeek O LO QUE SEA
 # Para que no muestre error.
+
+
 OPENAI_KEY = ""
-DEEPSEEK_KEY = ""
+DEEPSEEK_API_KEY = ""
 
 
 class AI_API:
@@ -55,19 +57,28 @@ class AI_API:
             "Content-Type": "application/json",
             "Authorization": f"Bearer {self.api_key}"
         }
-
         data = {
             "model": self.model,
-            "messages": [{"role": "user", "content": prompt}],
-
+            "messages": [{"role": "user", "content": prompt}]
         }
 
-        response = requests.post(self.url, json=data, headers=headers)
-        res_json = response.json()
-        print(res_json["choices"][0]["message"]["content"])
+        try:
+            response = requests.post(self.url, json=data, headers=headers)
+            res_json = response.json()
+            print(res_json["choices"][0]["message"]["content"])
+        except requests.exceptions.RequestException as e:
+            print(f"Error en la solicitud: {e}")
+            return None
 
 
+print("\nOPEN_AI:")
 openai_api = AI_API(
     OPENAI_KEY, "https://api.openai.com/v1/chat/completions", "gpt-4o-mini")
 
-openai_api.call("Escribe un breve poema sobre la programación en Python")
+openai_api.call("Escribe un breve poema sobre la programación")
+
+print("\nDEEPSEEK:")
+deepseek_api = AI_API(
+    DEEPSEEK_API_KEY, "https://api.deepseek.com/chat/completions", "deepseek-chat")
+
+deepseek_api.call("Escribe un breve poema sobre la programación")
