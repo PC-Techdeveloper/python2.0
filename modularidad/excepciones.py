@@ -94,7 +94,7 @@ Segundo argumento de división o módulo es cero
 1 / 0
 """
 
-## Agrupando excepciones
+# Agrupando excepciones
 
 
 def intDivision(a: int, b: int) -> int:

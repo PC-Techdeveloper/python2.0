@@ -45,8 +45,8 @@ Un paquete es una carpeta que contiene ficheros de Python y otros paquetes.
 """
 
 # Importar desde un paquete:
-from extramath import frac, stats
 
+from extramath import frac, stats
 print(frac.gcd(21, 35))
 print(stats.mean(6, 3, 9, 12))
 

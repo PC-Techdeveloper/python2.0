@@ -15,6 +15,7 @@ CLASE: Es el molde o plantilla con el que se crean los objetos. Define los atrib
 
 
 # Definiendo una clase, palabra reservada 'class'
+from time import time
 class StarWarsDroid:
     pass
 
@@ -355,8 +356,8 @@ r3 = r1 + r2
 
 print(f"Fusión driod \n{r3.name} with power {r3.power}")
 
-## __str__ : Permite establecer la forma en la que un objeto es presentado
-## como una cadena de texto
+# __str__ : Permite establecer la forma en la que un objeto es presentado
+# como una cadena de texto
 
 
 class Machine:
@@ -412,8 +413,6 @@ Gestores de contexto: Un gestor de contexto permite aplicar una serie de accione
 """
 
 # Mide el tiempo de ejecución de un bloque de código
-
-from time import time
 
 
 class Timer:
