@@ -210,8 +210,8 @@
   "editor.guides.indentation": true,
   "workbench.preferredHighContrastLightColorTheme": "One Dark Pro Darker",
   "workbench.preferredHighContrastColorTheme": "One Dark Pro Darker",
-  "workbench.activityBar.location": "bottom",
-  "workbench.iconTheme": "symbols",
+  "workbench.activityBar.location": "default",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.tree.renderIndentGuides": "none",
   "breadcrumbs.enabled": false,
   "breadcrumbs.icons": false,
@@ -333,5 +333,4 @@
   "oneDarkPro.bold": true,
   "oneDarkPro.italic": true,
   "oneDarkPro.vivid": true,
-  "editor.lineHeight": 24
 }
