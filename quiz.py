@@ -39,3 +39,9 @@ result2 = s1 & s2
 
 print(result)
 print(result2)
+
+num = 10
+num = num * 2
+num += num - 5
+
+print(num)
