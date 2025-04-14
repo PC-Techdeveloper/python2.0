@@ -174,7 +174,7 @@
   "files.autoSave": "afterDelay",
   "editor.minimap.enabled": false,
   "window.zoomLevel": 1.40,
-  "editor.fontSize": 13.20,
+  "editor.fontSize": 15.5,
   "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font Mono",
   "editor.wordWrap": "bounded",
   "editor.fontLigatures": true,
@@ -221,7 +221,7 @@
   "breadcrumbs.showConstants": false,
   "breadcrumbs.showConstructors": false,
   "workbench.editor.empty.hint": "hidden",
-  "workbench.editor.enablePreview": true,
+  "workbench.editor.enablePreview": false,
   "workbench.editor.labelFormat": "short",
   "window.density.editorTabHeight": "default",
   "editor.formatOnType": true,
@@ -330,7 +330,6 @@
   "editor.suggest.showSnippets": true,
   "debug.showInStatusBar": "never",
   "github.copilot.nextEditSuggestions.enabled": true,
-  "oneDarkPro.bold": true,
   "oneDarkPro.italic": true,
-  "oneDarkPro.vivid": true,
+  "editor.lineHeight": 24
 }
