@@ -273,7 +273,7 @@
   "editor.suggest.insertMode": "replace",
   "editor.detectIndentation": false,
   "workbench.editor.showTabs": "multiple",
-  "editor.colorDecorators": false,
+  "editor.colorDecorators": true,
   "editor.renderLineHighlight": "line",
   "chat.editor.wordWrap": "on",
   "editor.accessibilitySupport": "off",
