@@ -4,6 +4,7 @@ Un diccionario es un objeto indexado por claves que tienen asociados los valores
 
 # Creando diccionarios
 
+import copy
 empty_dict = {}
 
 rae = {
@@ -29,13 +30,13 @@ Conversión:
 
 # dict()
 
-## Diccionario a partir de una lista de cadenas de texto
+# Diccionario a partir de una lista de cadenas de texto
 print(dict(["a1", "b2"]))
 
-## Diccionario a partir de una tupla de cadenas de texto
+# Diccionario a partir de una tupla de cadenas de texto
 print(dict(("a1", "b2")))
 
-## Diccionario a partir de una lista de listas
+# Diccionario a partir de una lista de listas
 print(dict([["a", 1], ["b", 2]]))
 
 # Diccionario vacío sin argumentos
@@ -223,10 +224,9 @@ print(original_rae)
 
 print(copy_rae)
 
-## En caso de que se este trabajando con elementos mutables, se hace uso
-## de la función deepcopy() dentro del módulo copy de la librería estándar
+# En caso de que se este trabajando con elementos mutables, se hace uso
+# de la función deepcopy() dentro del módulo copy de la librería estándar
 
-import copy
 
 original_dict = {
     "name": "Juan",
