@@ -4,6 +4,7 @@ Las listas permiten almacenar objetos mediante un orden definido y con posibilid
 
 # Creando listas: Una lista esta compuesta por zeros o más elementos
 
+from collections import deque
 empty_list = []
 
 languages = ["Python", "Ruby", "JavaScript"]
@@ -26,7 +27,7 @@ print(list())
 Operaciones con listas
 """
 
-## Obtener un elemento: Obtener a través del índice
+# Obtener un elemento: Obtener a través del índice
 
 shopping = ["Agua", "Huevos", "Aceite"]
 
@@ -36,7 +37,7 @@ print(shopping[2])
 print(shopping[-1])  # Acceso con índice negativo
 # print(shopping[3])  # error: No existe en la lista ✖️
 
-## Trocear una lista: Extraer elementos de una lista
+# Trocear una lista: Extraer elementos de una lista
 
 shopping = ["Agua", "Huevos", "Aceite", "Sal", "Limon"]
 
@@ -56,13 +57,13 @@ print(shopping[2:100])
 Invertir una lista: Cambiar el orden de los elementos
 """
 
-## Conservando la lista original
+# Conservando la lista original
 print(shopping[::-1])
 
 # Función reversed()
 print(list(reversed(shopping)))
 
-## Modificando la lista original
+# Modificando la lista original
 
 languages = ["Python", "Ruby", "JavaScript", "Java", "C++"]
 
@@ -70,14 +71,14 @@ languages.reverse()
 
 print(languages)
 
-## Añadir al final de la lista
+# Añadir al final de la lista
 brands = ["Nike", "Adidas", "Puma", "Reebok", "Asics"]
 
 brands.append("New Balance")
 
 print(brands)
 
-## Creando desde vacío
+# Creando desde vacío
 even_numbers = []
 # Iterando sobre un range
 for i in range(11):
@@ -86,7 +87,7 @@ for i in range(11):
 
 print(even_numbers)
 
-## Añadir en cualquier posición de una lista
+# Añadir en cualquier posición de una lista
 
 even_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
@@ -94,7 +95,7 @@ even_numbers.insert(0, "Jamon")
 
 print(even_numbers)
 
-## Repetir elementos
+# Repetir elementos
 
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
@@ -113,12 +114,12 @@ shopping = ["Agua", "Huevos", "Aceite"]
 
 fruitshop = ["Frutas", "Verduras", "Manzanas"]
 
-## Conservando la lista original
+# Conservando la lista original
 combined = shopping + fruitshop
 
 print(combined)
 
-## Modificando la lista original
+# Modificando la lista original
 
 # extend()
 shopping.extend(fruitshop)
@@ -130,13 +131,13 @@ shopping.append(fruitshop)
 
 print(shopping)
 
-## Modificar una lista
+# Modificar una lista
 
 shopping[0] = "Frutas"
 # shopping[100] = "Jugo"  # error: No existe en la lista ✖️
 print(shopping)
 
-## Modificar con troceado
+# Modificar con troceado
 
 fruitshop = ["Frutas", "Verduras", "Manzanas", "Sal", "Limon"]
 
@@ -144,7 +145,7 @@ fruitshop[1:4] = ["Nuggest", "Atún"]
 
 print(fruitshop)
 
-## Borrar elementos: Python ofrece cuatro formas para borrar elementos en una lista
+# Borrar elementos: Python ofrece cuatro formas para borrar elementos en una lista
 
 shopping2 = ["Agua", "Huevos", "Aceite", "Sal", "Limon", "Limon"]
 
@@ -184,12 +185,12 @@ Borrado completo: Python ofrece al menos dos formas para borrar una lista por co
 
 foods = ["Frutas", "Verduras", "Manzanas", "Azucar", "Limon", "Mango"]
 
-## Clear()
+# Clear()
 foods.clear()
 
 print(foods)
 
-## Reinicializar la lista a vacía con []
+# Reinicializar la lista a vacía con []
 
 foods = []
 
@@ -199,7 +200,7 @@ print(foods)
 Encontrar un elemento: 
 """
 
-## Descubrir el índice de un elemento
+# Descubrir el índice de un elemento
 
 third_shopping = ["Agua", "Huevos", "Aceite", "Sal", "Limon"]
 
@@ -272,16 +273,16 @@ print(shopping_string)
 Ordenar una lista: 
 """
 
-## Conservando la lista original
+# Conservando la lista original
 
 languages = ["Python", "Ruby", "JavaScript", "Java", "C++"]
 
-## sorted(): Devuelve una nueva lista ordenada
+# sorted(): Devuelve una nueva lista ordenada
 print(sorted(languages))
 
-## Modificando la lista original
+# Modificando la lista original
 
-## sort():
+# sort():
 
 languages = ["Python", "Ruby", "JavaScript", "Java", "C++"]
 
@@ -289,7 +290,7 @@ languages.sort()
 
 print(languages)
 
-## reverse, para indicar el orden inverso de la lista
+# reverse, para indicar el orden inverso de la lista
 
 languages = ["Python", "Ruby", "JavaScript", "Java", "C++"]
 
@@ -304,12 +305,12 @@ shopping3 = ["Agua", "Huevos", "Aceite", "Sal", "Limon"]
 for item in shopping3:
     print(item)
 
-## Iterar usando enumeración para saber el indice del elemento
+# Iterar usando enumeración para saber el indice del elemento
 
 for i, item in enumerate(shopping3):
     print(f"Indice {i}: {item}")
 
-## Iterar sobre multiples listas
+# Iterar sobre multiples listas
 """
 Python ofrece la posibilidad de iterar sobre multiples listas en paralelo utilizando la función zip(). Se basa en ir juntando ambas listas elemento a elemento
 """
@@ -321,7 +322,7 @@ details = ["mineral natural", "fresco", "salado"]
 for product, detail in zip(shopping, details):
     print(product, detail)
 
-## Obtener una lista explicita con la combinación en paralelo de las listas
+# Obtener una lista explicita con la combinación en paralelo de las listas
 shoes = ["Nike", "Reebok", "Asics"]
 
 details_shoes = ["rojo", "azul", "amarillo"]
@@ -340,7 +341,7 @@ CUIDADO CON LAS COPIAS: Las listas son estructuras de datos mutables y esta cara
 
 original_list = [4, 3, 7, 1]
 
-## Copy(): No modifica la lista original
+# Copy(): No modifica la lista original
 copy_list = original_list.copy()
 
 original_list[0] = 15
@@ -362,7 +363,7 @@ word = "python"
 enough_length = len(word) > 4
 right_beginning = word.startswith("p")
 min_ys = word.count("y") >= 1
-## Versión con veracidad múltiple usando all()
+# Versión con veracidad múltiple usando all()
 is_cool_word = all([enough_length, right_beginning, min_ys])
 
 if is_cool_word:
@@ -376,7 +377,7 @@ enough_length = len(word) > 4
 right_beginning = word.startswith("p")
 min_ys = word.count("y") >= 1
 
-## Versión con veracidad múltiple usando any()
+# Versión con veracidad múltiple usando any()
 is_fine_word = any([enough_length, right_beginning, min_ys])
 
 if is_fine_word:
@@ -384,7 +385,7 @@ if is_fine_word:
 else:
     print("¡No thanks ✖️!")
 
-## Tener en cuenta la peculiaridad cuando se trabajan con listas vacias
+# Tener en cuenta la peculiaridad cuando se trabajan con listas vacias
 print(all([]))
 
 print(any([]))
@@ -396,7 +397,7 @@ values = "32,45,11,87,20,48"
 int_values = [int(value) for value in values.split(",")]
 print(int_values)
 
-## Condiciones en comprensiones
+# Condiciones en comprensiones
 values = "32,45,11,87,20,48"
 int_values = [int(v) for v in values.split(",") if v.startswith("4")]
 print(int_values)
@@ -409,15 +410,15 @@ sys.argv: Ejecutar programa desde la línea de comandos, acceder a los argumento
 Funciones matemáticas:
 """
 
-## Suma de todos los valores
+# Suma de todos los valores
 data = [5, 3, 2, 8, 9, 1]
 print(sum(data))
 
-## Mínimo de todos los valores
+# Mínimo de todos los valores
 data = [5, 3, 2, 8, 9, 1]
 print(min(data))
 
-## Máximo de todos los valores
+# Máximo de todos los valores
 data = [5, 3, 2, 8, 9, 1]
 print(max(data))
 
@@ -446,7 +447,6 @@ for playline in team:
     else:
         print(playline)
 
-from collections import deque
 
 deque()
 
