@@ -279,7 +279,7 @@
   "editor.detectIndentation": false,
   "workbench.editor.showTabs": "multiple",
   "editor.colorDecorators": true,
-  "editor.renderLineHighlight": "line",
+  "editor.renderLineHighlight": "none",
   "chat.editor.wordWrap": "on",
   "editor.accessibilitySupport": "off",
   "terminal.integrated.smoothScrolling": true,
@@ -287,10 +287,7 @@
   "github.copilot.selectedCompletionModel": "gpt-4o-copilot",
   "security.workspace.trust.untrustedFiles": "open",
   "supermaven.enable": {
-    "*": false,
-    "supermaven.inlineCompletions.enabled": false,
-    "supermaven.inlineCompletions.delayMs": 10,
-    "supermaven.inlineCompletions.maxResults": 10
+    "*": true,
   },
   "telemetry.enabledTelemetry": false,
   "telemetry.telemetryLevel": "off",
