@@ -337,4 +337,7 @@
   "terminal.integrated.sendKeybindingsToShell": true,
   "glassit.alpha": 220,
   "oneDarkPro.vivid": true,
+  "database-client.autoSync": true,
+  "supermaven.enableFixWithSupermaven": true,
+  "diffEditor.codeLens": true,
 }
