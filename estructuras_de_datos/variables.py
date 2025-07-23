@@ -33,3 +33,15 @@ print(len(message))
 # adjust(ax, bbox)
 
 """ EXPRESSIONS AND STATEMENTS """
+""" An expressions is a combination of values, variables, and operators. A value all by itself is considered an expression, and so is a variable, so the following are all legal expressions. """
+
+print(42)
+print(n + 25)
+
+""" An statement is a unit of code that has an effect, like creating a variable or displaying a value. """
+# Assignment statement
+n = 13
+# print assignment
+print(n)
+
+""" SCRIPT MODE """
