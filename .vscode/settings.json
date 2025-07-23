@@ -182,7 +182,7 @@
   "editor.formatOnSave": true,
   "prettier.useTabs": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.hover.enabled": true,
+  "editor.hover.enabled": false,
   "[python]": {
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.formatOnType": true,
