@@ -81,3 +81,13 @@ operator = degress / 6 * pi
 print(f"The result is: {operator:.2f}")
 
 """ STRINGS OPERATORS """
+
+# the + operator performs string concatenation
+first = 'throat'
+second = 'wabier'
+print(first + second)
+
+""" DEBUGGING """
+# Compute the percentage of the hour that has elapsed
+minutes = 10
+percentage = (minutes * 100) / 60
