@@ -45,3 +45,39 @@ n = 13
 print(n)
 
 """ SCRIPT MODE """
+miles = 26.2
+miles_calculator = miles * 1.61
+print(miles_calculator)
+
+print(miles * 1.61)
+
+x = 5
+print(x + 1)
+
+"""
+ORDER OF OPERATIONS
+"""
+
+# Parentheses
+option_one = 2 * (3-1)
+option_two = (1+1)**(6-2)
+
+minutes = 20
+option_three = (minutes * 100) / 60
+
+print(f"One: {option_one}\nTwo: {option_two}\nThree: {option_three:.2f}")
+
+# Exponentiation
+print(1+2**3)
+print(2*3**2)
+
+# Multiplication and division
+print(2*3-1)
+print(6+4/2)
+
+# Operators the same precedence are evaluated from left to right
+degress = 180
+operator = degress / 6 * pi
+print(f"The result is: {operator:.2f}")
+
+""" STRINGS OPERATORS """
