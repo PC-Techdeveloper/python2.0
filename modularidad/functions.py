@@ -43,3 +43,48 @@ sqrt = math.sqrt(2) / 2.0
 print(sqrt)
 
 """ ADDING NEW FUNCTIONS """
+# header
+
+
+def print_lyrics():
+    # body
+    # indented
+    print("I'm a lumberjack and I'm okay")
+    print("I sleep all night and I work all day")
+
+
+# defining a function creates a function object
+print(print_lyrics)
+
+# we could write a function called repeat_lyrics
+
+
+def repeat_lyrics():
+    # Calling the new function
+    print_lyrics()
+    print_lyrics()
+
+
+# and then call it
+repeat_lyrics()
+
+""" PARAMETERS AND ARGUMENTS """
+
+# Parameters
+
+
+def print_twice(bruce):
+    print(bruce)
+    print(bruce)
+
+
+# Arguments
+print(print_twice('Span' * 4))
+print(print_twice(42))
+print(print_twice(math.cos(math.pi)))
+
+# you can also use a variable as an argument
+michael = 'Eric, the half a bee'
+print_twice(michael)
+
+""" VARAIABLES AND PARAMETERS ARE LOCAL """
