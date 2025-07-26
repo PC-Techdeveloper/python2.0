@@ -88,3 +88,33 @@ michael = 'Eric, the half a bee'
 print_twice(michael)
 
 """ VARAIABLES AND PARAMETERS ARE LOCAL """
+
+# when you create a variable inside a function, it is local to that function
+
+
+
+# this function takes two arguments
+def cat_twice(part1, part2):
+    cat = part1 + part2 # cat is a local variable
+    print_twice(cat)
+
+
+line1 = 'Bling tiddle'
+line2 = 'Tiddle bang'
+
+cat_twice(line1, line2)
+
+""" FRUITFUTL FUNCTIONS AND VOID FUNCTIONS """
+
+# Fruitful function 
+x = math.cos(radians)
+golden = (math.sqrt(5) + 1) / 2
+
+# Call a function in interactive mode
+print(math.sqrt(5))
+
+# Void function
+result = print_twice('Bing')
+print(result)
+
+print(type(None))
