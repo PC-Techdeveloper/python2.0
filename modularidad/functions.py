@@ -92,10 +92,9 @@ print_twice(michael)
 # when you create a variable inside a function, it is local to that function
 
 
-
 # this function takes two arguments
 def cat_twice(part1, part2):
-    cat = part1 + part2 # cat is a local variable
+    cat = part1 + part2  # cat is a local variable
     print_twice(cat)
 
 
@@ -106,7 +105,7 @@ cat_twice(line1, line2)
 
 """ FRUITFUTL FUNCTIONS AND VOID FUNCTIONS """
 
-# Fruitful function 
+# Fruitful function
 x = math.cos(radians)
 golden = (math.sqrt(5) + 1) / 2
 
