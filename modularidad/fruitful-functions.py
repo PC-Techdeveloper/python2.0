@@ -29,3 +29,15 @@ def absolute_value(x):
 print(absolute_value(-5))
 
 """ INCREMENT DEVELOPMENT """
+
+
+def distance(x1, y1, x2, y2):
+    dx = x2 - x1
+    dy = y2 - y1
+    print(f"dx = {dx}")
+    print(f"dy = {dy}")
+    return 0.0
+
+
+# To test the new function, call it with sample arguments
+distance(1, 2, 3, 4)
