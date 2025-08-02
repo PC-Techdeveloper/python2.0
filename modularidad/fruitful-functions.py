@@ -41,3 +41,5 @@ def distance(x1, y1, x2, y2):
 
 # To test the new function, call it with sample arguments
 distance(1, 2, 3, 4)
+
+""" BOOLEAN FUNCTIONS"""
