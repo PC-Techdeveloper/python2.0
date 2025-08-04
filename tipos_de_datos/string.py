@@ -74,5 +74,32 @@ print(index)
 print(indexSecond)
 
 """
-THE 'IN' OPERATOR
+THE 'IN' OPERATOR: Is an a boolean operator that takes two strings and returns True if the first string is a substring of the second string.
 """
+
+print('a' in 'banana')
+
+
+def in_both(word1, word2):
+    for letter in word1:
+        if letter in word2:
+            print(letter)
+
+
+in_both('apple', 'orange')
+
+"""
+STRING COMPARATIONS: The relational operators work on strings. (>, >=, <, <=, ==, !=)
+"""
+
+word = 'apple'
+
+if word == 'cherry':
+    print('All right, cherrys.')
+
+if word < 'cherry':
+    print(f'Your word, {word}, comes before cherry.')
+elif word > 'cherry':
+    print(f'Your word, {word}, comes after cherry.')
+else:
+    print('All right, cherrys.')
