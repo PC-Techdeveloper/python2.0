@@ -88,3 +88,71 @@ print(t)
 """
 MAP, FILTER AND REDUCE
 """
+print("--- map, filter and reduce ---")
+# sum: adding up the elements of a list (built-function)
+t = [4, 5, 6]
+print(sum(t))
+
+# an operation like this that combines a sequence of elements into a
+# single value is called a "reduce".
+
+
+def capitalize_all(t):
+    res = []
+    for s in t:
+        res.append(s.capitalize())
+    return res
+
+
+# Map: applies a function to each element of a list.
+print(capitalize_all(['a', 'b', 'c']))
+
+"""
+DELETING ELEMENTS
+"""
+
+# pop: removes and returns the last element of a list.
+t = ['a', 'b', 'c', 'd']
+x1 = t.pop()
+x2 = t.pop(0)
+print(x1, x2)
+
+# del: removes the element at a given index.
+t = ['a', 'b', 'c']
+del t[1]
+print(t)
+
+# remove: removes the first occurrence of a given element.
+# if not found, returns None
+t = ['a', 'b', 'c', 'a', 'b', 'c']
+t.remove('a')
+print(t)
+
+# to remove more than one element, you can use del with a slice index
+remove_items = ['apple', 'banana', 'orange', 'cherry', 'pear']
+del remove_items[1:3]
+print(remove_items)
+
+"""
+LIST AND STRINGS
+"""
+
+# To convert from a string to a list, you can list()
+s = 'hello'
+t = list(s)
+print(t)
+
+# break a string into words, you can use split()
+s = 'pining for the fjords'
+t = s.split()
+print(t)
+
+# Join: joins a list of strings into a single string
+t = ['a', 'b', 'c']
+delimiter = '-'
+s = delimiter.join(t)
+print(s)
+
+"""
+OBJECTS AND VALUES:
+"""
