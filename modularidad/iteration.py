@@ -53,3 +53,15 @@ while True:
 print('** Done **')
 
 """ SQUARE ROOTS"""
+a = 4
+x = 3
+y = (x+a/x) / 2
+print(y)
+
+# when y == x , we can stop the loop
+while True:
+    print(x)
+    y = (x+a/x) / 2
+    if y == x:
+        break
+    x = y
