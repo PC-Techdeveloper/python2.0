@@ -192,3 +192,8 @@ print(letters)
 t1 = [1, 2]
 t2 = t1.append(3)
 print(t1)
+
+# Using + operator
+t1 = [1, 2]
+t2 = t1 + [3]
+print(t2)
