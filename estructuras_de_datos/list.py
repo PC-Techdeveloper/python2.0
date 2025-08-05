@@ -156,3 +156,39 @@ print(s)
 """
 OBJECTS AND VALUES:
 """
+a = 'banana'
+b = 'banana'
+print(a is b)
+# get two different objects
+a = [1, 2, 3]
+b = [1, 2, 3]
+print(a is b)
+
+"""
+ALIASING
+"""
+
+a = [1, 2, 3]
+b = a
+b[0] = 42
+print(b is a)
+print(a)
+
+"""
+LIST ARGUMENTS: When you pass a list to a function, the function gets a reference to the list.
+"""
+
+
+def delete_head(t):
+    del t[0]
+
+
+letters = ['a', 'b', 'c', 'd']
+delete_head(letters)
+
+print(letters)
+
+# Here, an example using append:
+t1 = [1, 2]
+t2 = t1.append(3)
+print(t1)
