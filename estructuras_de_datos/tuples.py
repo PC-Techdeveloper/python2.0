@@ -95,3 +95,36 @@ LISTAS Y TUPLAS
 s = 'abc'
 t = [0, 1, 2]
 print(zip(s, t))
+
+# Iterar un objeto zip
+for par in zip(s, t):
+    print(par)
+
+# Operadores de listas y métodos usar el método list()
+print(list(zip(s, t)))
+
+# Usar la asignación de tuplas en un bucle for para recorrer una lista de tuplas
+t = [('a', 1), ('b', 2), ('c', 3)]
+for letter, number in t:
+    print(f"{letter} is {number}")
+
+"""
+DICCIONARIOS Y TUPLAS
+"""
+
+# items(): Devuelve una secuencia de tuplas, donde cada tupla es (clave, valor)
+d = {'a': 0, 'b': 1, 'c': 2}
+t = d.items()
+print(t)
+
+# Puede utilizarse en un bucle for
+for key, value in d.items():
+    print(f"key: {key}, value: {value}")
+
+# Sentido contrario 
+t = [('a', 0), ('b', 1), ('c', 2)]
+d = dict(t)
+print(d)
+
+d = dict(zip('abc', range(3)))
+print(d)
